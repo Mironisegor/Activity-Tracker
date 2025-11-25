@@ -1,0 +1,33 @@
+/// Auto-generated
+/// Language: ru
+
+"go" = "Старт";
+"stop" = "Стоп";
+"cancel" = "Отменить";
+"at" = "Возле";
+"rides" = "Треки";
+"duration" = "Длительность";
+"distance" = "Дистанция";
+"avg_speed" = "Ср. скорость";
+"current_speed" = "Текущая скорость";
+"max_speed" = "Макс. скорость";
+"elevation_gain" = "Набор высоты";
+"elevation" = "Подъем";
+"speed" = "Скорость";
+"avg_power" = "Ср. усилие";
+"energy_output" = "Энергетический вклад";
+"weight_loss" = "Потерянный вес";
+"remove_ride" = "Удалить трек";
+"remove_ride_message" = "Вы уверены, что хотите удалить трек?";
+"confirm_delete" = "Да, удалить";
+"import_gpx_message" = "Хотите импортировать GPX?";
+"yes" = "Да";
+"no" = "Нет";
+"no_data_available" = "Данные недоступны";
+"unnamed_ride" = "Трек без имени";
+"summary" = "Статистика";
+"map" = "Карта";
+"close" = "Закрыть";
+"enable_location_title" = "Разрешить доступ к геопозиции";
+"enable_location_details" = "Приложению нужен доступ к вашей геопозиции чтобы показывать скорость и делать треки";
+

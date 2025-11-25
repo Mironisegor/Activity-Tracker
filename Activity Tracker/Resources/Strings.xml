@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<strings>
+    <string id="go">
+        <en>Go</en>
+        <nl>Ga</nl>
+        <ru>Старт</ru>
+    </string>
+    <string id="stop">
+        <ru>Стоп</ru>
+        <en>Stop</en>
+        <nl>Stoppen</nl>
+    </string>
+    <string id="cancel">
+        <en>Cancel</en>
+        <ru>Отменить</ru>
+    </string>
+    <string id="at">
+        <en>at</en>
+        <ru>Возле</ru>
+    </string>
+    <string id="rides">
+        <en>Rides</en>
+        <ru>Треки</ru>
+    </string>
+    <string id="duration">
+        <en>Duration</en>
+        <ru>Длительность</ru>
+    </string>
+    <string id="distance">
+        <en>Distance</en>
+        <ru>Дистанция</ru>
+    </string>
+    <string id="avg_speed">
+        <en>Avg. Speed</en>
+        <ru>Ср. скорость</ru>
+    </string>
+    <string id="current_speed">
+        <en>Current Speed</en>
+        <ru>Текущая скорость</ru>
+    </string>
+    <string id="max_speed">
+        <en>Max Speed</en>
+        <ru>Макс. скорость</ru>
+    </string>
+    <string id="elevation_gain">
+        <en>Elevation Gain</en>
+        <ru>Набор высоты</ru>
+    </string>
+    <string id="elevation">
+        <en>Elevation</en>
+        <ru>Подъем</ru>
+    </string>
+    <string id="speed">
+        <en>Speed</en>
+        <ru>Скорость</ru>
+    </string>
+    <string id="avg_power">
+        <en>Avg. Power</en>
+        <ru>Ср. усилие</ru>
+    </string>
+    <string id="energy_output">
+        <en>Energy Output</en>
+        <ru>Энергетический вклад</ru>
+    </string>
+    <string id="weight_loss">
+        <en>Est. Weight Loss</en>
+        <ru>Потерянный вес</ru>
+    </string>
+    <string id="remove_ride">
+        <en>Remove Ride</en>
+        <ru>Удалить трек</ru>
+    </string>
+    <string id="remove_ride_message">
+        <en>Are you sure you want to remove Ride?</en>
+        <ru>Вы уверены, что хотите удалить трек?</ru>
+    </string>
+    <string id="confirm_delete">
+        <en>Yes, please delete</en>
+        <ru>Да, удалить</ru>
+    </string>
+    <string id="import_gpx_message">
+        <en>Do you want to import GPX?</en>
+        <ru>Хотите импортировать GPX?</ru>
+    </string>
+    <string id="yes">
+        <en>Yes</en>
+        <ru>Да</ru>
+    </string>
+    <string id="no">
+        <en>No</en>
+        <ru>Нет</ru>
+    </string>
+    <string id="no_data_available">
+        <en>No data available</en>
+        <ru>Данные недоступны</ru>
+    </string>
+    <string id="unnamed_ride">
+        <en>Unnamed Ride</en>
+        <ru>Трек без имени</ru>
+    </string>
+    <string id="summary">
+        <en>Summary</en>
+        <ru>Статистика</ru>
+    </string>
+    <string id="map">
+        <en>Map</en>
+        <ru>Карта</ru>
+    </string>
+    <string id="close">
+        <en>Close</en>
+        <ru>Закрыть</ru>
+    </string>
+    <string id="enable_location_title">
+        <en>Enable Location</en>
+        <ru>Разрешить доступ к геопозиции</ru>
+    </string>
+    <string id="enable_location_details">
+        <en>App needs access to your location in order to show speed and track rides</en>
+        <ru>Приложению нужен доступ к вашей геопозиции чтобы показывать скорость и делать треки</ru>
+    </string>
+</strings>
