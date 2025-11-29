@@ -61,7 +61,6 @@ class GridShapeViewModel<X: AxisValuesProvider, Y: AxisValuesProvider> {
         return CGFloat(step) * xScale
     }
 
-    // TODO: Move to renderer
     typealias Index = Int
     typealias DrawBlock = (CGMutablePath, CGPoint, Index) -> Void
 
@@ -99,7 +98,6 @@ class GridShapeViewModel<X: AxisValuesProvider, Y: AxisValuesProvider> {
 
     func yAxisImage(in size: CGSize) -> UIImage? {
         axisImage(values: yValues(in: size), in: size) { path, point, index in
-            // Skip max value to display
             guard index != yAxis.values.count - 1 else { return }
             let value =  yAxis.format(at: index)
             let string = NSAttributedString(string: value, attributes: [

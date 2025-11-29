@@ -48,22 +48,6 @@ struct GaugesView: View {
                     }.background(Color(UIColor.systemBackground))
                 )
             }
-//            PageView.Page {
-//                AnyView(
-//                    ZStack {
-//                        Rectangle().fill().foregroundColor(Color(UIColor.systemBackground))
-//                        Text("Not implemented")
-//                    }
-//                )
-//            }
-//            PageView.Page {
-//                AnyView(
-//                    ZStack {
-//                        Rectangle().fill().foregroundColor(Color(UIColor.systemBackground))
-//                        Text("Not implemented")
-//                    }
-//                )
-//            }
         }
     }
 }

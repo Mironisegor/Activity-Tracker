@@ -29,7 +29,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             .filter { $0.shouldAutostart }
             .forEach { $0.start() }
 
-        // Use a UIHostingController as window root view controller.
         if let windowScene = scene as? UIWindowScene {
             let window = UIWindow(windowScene: windowScene)
             coordinator = AppCoordinator(window: window)

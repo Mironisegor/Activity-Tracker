@@ -9,7 +9,6 @@ import UIKit
 
 extension UIColor {
 
-    /// Color formats
     enum ColorFormat: Int {
 
         case RGB = 12
@@ -21,7 +20,6 @@ extension UIColor {
         }
     }
 
-    /// Returns color with given hex string
     convenience init?(string: String) {
         let string = string.replacingOccurrences(of: "#", with: "")
 
@@ -34,7 +32,6 @@ extension UIColor {
         self.init(hex: hex, format: format)
     }
 
-    /// Returns color with given hex integer value and color format
     convenience init(hex: Int, format: ColorFormat = .RRGGBB) {
 
         let red: Int, green: Int, blue: Int, alpha: Int
@@ -65,7 +62,6 @@ extension UIColor {
         )
     }
 
-    /// Returns integer color representation
     var asInt: Int {
         var red: CGFloat = 0, green: CGFloat = 0, blue: CGFloat = 0, alpha: CGFloat = 0
 
@@ -74,7 +70,6 @@ extension UIColor {
         return (Int)(red * 255) << 16 | (Int)(green * 255) << 8  | (Int)(blue * 255)  << 0
     }
 
-    /// Returns hex string color representation
     var asHexString: String {
         return String(format: "#%06x", asInt)
     }
@@ -113,7 +108,6 @@ extension UIColor {
     static let flatConcerteColor = UIColor(hex: 0x95a5a6)
 }
 
-// Dutch Palette
 extension UIColor {
     // Yellow / Rd
     static let fdSunflower = UIColor(hex: 0xFFC312)

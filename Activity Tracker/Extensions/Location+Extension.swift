@@ -21,7 +21,7 @@ typealias LocationWithDistance = (location: CLLocation, distance: Measurement<Un
 
 extension Collection where Element == CLLocation, Index == Int {
 
-    /// See: http://www.geomidpoint.com/calculation.html
+    /// Смотреть http://www.geomidpoint.com/calculation.html
     func center() -> Element? {
         guard !isEmpty else {
             return nil

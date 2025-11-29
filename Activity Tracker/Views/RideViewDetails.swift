@@ -50,10 +50,8 @@ struct RideViewDetails: View {
                             .frame(height: 180)
                     }
 
-                    // Summary
                     RideFullSummaryView(viewModel: viewModel)
 
-                    // Speed
                     if viewModel.isChartVisible(.speed) {
                         Text(Strings.speed).padding()
                         LineChartView(xValues: [0, viewModel.distanceValue],

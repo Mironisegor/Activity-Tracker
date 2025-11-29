@@ -16,7 +16,6 @@ extension MKMapSnapshotter.Options {
 }
 
 extension MKMapSnapshotter {
-    // swiftlint:disable:next identifier_name
     static func Publisher(region: MKCoordinateRegion,
                           size: CGSize = CGSize(width: 1200, height: 800),
                           processor: MapSnapshotProcessor) -> MKMapSnapshotterPublisher {

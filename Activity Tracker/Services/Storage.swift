@@ -35,14 +35,13 @@ class StorageService: Service {
             if let createdAt = createdAt {
                 ride.createdAt = createdAt
             }
-            // Summary
             ride.summary = RideSummary.create(context: context)
             ride.summary?.distance = summary.distance
             ride.summary?.duration = summary.duration
             ride.summary?.avgSpeed = summary.avgSpeed
             ride.summary?.maxSpeed = summary.maxSpeed
             ride.summary?.elevationGain = summary.elevationGain
-            // Track
+            
             ride.track = Track.create(name: name, context: context)
             locations
                 .forEach { ride.track?.addTrackPoint(with: $0, context: context) }

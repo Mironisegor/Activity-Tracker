@@ -36,7 +36,6 @@ class BluetoothScanner: NSObject, Service {
         func writeValue(_ data: Data) -> AnyPublisher<Characteristics, Error> {
             peripheral.writeValue(data: data, for: characteristic, type: .withResponse)
                 .map { characteristics in
-                    debugPrint("written", characteristics)
                     return self
                 }
                 .print()
@@ -108,7 +107,6 @@ class BluetoothScanner: NSObject, Service {
             }
 
             peripheral.services?.forEach {
-                // debugPrint("s", $0.uuid.uuidString)
                 discoverServicesPublisher.send(Service(peripheral: self, service: $0))
             }
             discoverServicesPublisher.send(completion: .finished)
@@ -121,7 +119,6 @@ class BluetoothScanner: NSObject, Service {
             }
 
             service.characteristics?.forEach {
-                // debugPrint("s", service.uuid.uuidString, "c", $0.uuid.uuidString)
                 discoverCharacteristicsPublisher.send(
                     Characteristics(peripheral: self, service: service, characteristic: $0)
                 )
@@ -170,7 +167,6 @@ class BluetoothScanner: NSObject, Service {
             debugPrint(#function)
             guard error == nil else {
                 notifyingPublishers[characteristic.uuid]?.send(completion: .failure(error!))
-                // notifyingPublishers[characteristic.uuid] = nil
                 return
             }
             notifyingPublishers[characteristic.uuid]?.send(characteristic)
@@ -210,7 +206,7 @@ class BluetoothScanner: NSObject, Service {
         state
             .print()
             .sink { [unowned self] state in
-                debugPrint("State -> \(state.rawValue)")
+                debugPrint("Состояние -> \(state.rawValue)")
                 if state == .poweredOff {
                     self.stop()
                 }
@@ -219,14 +215,13 @@ class BluetoothScanner: NSObject, Service {
     }
 
     func start() {
-        debugPrint("Starting \(Self.self)...")
+        debugPrint("Начало \(Self.self)...")
         guard manager.isScanning == false else {
-            debugPrint("You can start only powered on bluetooth and if not already in scanning state")
             return
         }
 
         func scan() {
-            debugPrint("Scanning...")
+            debugPrint("Сканирование...")
             manager.scanForPeripherals(
                 withServices: nil,
                 options: [CBCentralManagerScanOptionAllowDuplicatesKey: true]
@@ -240,7 +235,7 @@ class BluetoothScanner: NSObject, Service {
     }
 
     func stop() {
-        debugPrint("Stopping \(Self.self)...")
+        debugPrint("Остановка \(Self.self)...")
         manager.stopScan()
         statePublisher?.cancel()
         statePublisher = nil

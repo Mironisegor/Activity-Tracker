@@ -19,7 +19,6 @@ extension TrackPoint: Decodable {
         self.init(context: context)
 
         let container = try decoder.container(keyedBy: CodingKeys.self)
-        // Decode id if needed
         if let id = try container.decodeIfPresent(UUID.self, forKey: .id) {
             self.id = id
         }

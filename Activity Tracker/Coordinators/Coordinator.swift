@@ -73,7 +73,7 @@ class AppCoordinator: Coordinator, ViewRunner {
         do {
             try dataImporter.import(url: context.url)
         } catch {
-            debugPrint("GPX Import", error)
+            debugPrint("GPX Импорт", error)
         }
     }
 }

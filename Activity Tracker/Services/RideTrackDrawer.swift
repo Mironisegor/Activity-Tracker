@@ -43,7 +43,6 @@ struct RideTrackDrawer: MapSnapshotProcessor {
 
         UIGraphicsBeginImageContextWithOptions(snapshot.image.size, false, UIScreen.main.scale)
 
-        // Original image
         snapshot.image.draw(at: .zero)
 
         let locations = self.locations()

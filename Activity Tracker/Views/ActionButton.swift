@@ -54,11 +54,9 @@ struct ActionButton: View {
                 }
                 Button(action: {
                     if self.stopViewModel.isToggled {
-                        // Stop
                         self.handler(.stop)
                         self.stopViewModel.isToggled.toggle()
                     } else {
-                        // Go, Pause, Resume
                         self.handler(.startPause)
                     }
                 }, label: {
