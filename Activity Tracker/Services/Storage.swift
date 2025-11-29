@@ -21,7 +21,7 @@ extension CoreDataStorage {
 class StorageService: Service {
 
     let shouldAutostart = true
-    let storage = CoreDataStorage(container: try! NSPersistentContainer("Velik"))
+    let storage = CoreDataStorage(container: try! NSPersistentContainer("DB"))
 
     func start() {
         debugPrint(storage)

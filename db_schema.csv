@@ -1,0 +1,48 @@
+Entity,Element,Kind,Type or Destination,Optional,Details
+Gear,id,Attribute,UUID,Yes,Primary identifier
+Gear,name,Attribute,String,Yes,
+Gear,weight,Attribute,Double,Yes,Default 0
+Gear,rides,Relationship,Ride (to-many),Yes,Deletion Nullify; inverse Ride.gear
+Ride,createdAt,Attribute,Date,No,
+Ride,deletedAt,Attribute,Date,Yes,
+Ride,id,Attribute,UUID,No,Primary identifier
+Ride,name,Attribute,String,Yes,
+Ride,updatedAt,Attribute,Date,No,
+Ride,gear,Relationship,Gear (to-one),Yes,Deletion Nullify; inverse Gear.rides
+Ride,summary,Relationship,RideSummary (to-one),Yes,Deletion Cascade; inverse RideSummary.ride
+Ride,track,Relationship,Track (to-one),Yes,Deletion Nullify; inverse Track.ride
+Ride,user,Relationship,User (to-one),Yes,Deletion Nullify; inverse User.rides
+RideSummary,avgPower,Attribute,Double,Yes,Default 0
+RideSummary,avgSpeed,Attribute,Double,No,Default 0
+RideSummary,distance,Attribute,Double,No,Default 0
+RideSummary,duration,Attribute,Double,No,Default 0
+RideSummary,elevationGain,Attribute,Double,Yes,Default 0
+RideSummary,id,Attribute,UUID,No,Primary identifier
+RideSummary,maxSpeed,Attribute,Double,No,Default 0
+RideSummary,ride,Relationship,Ride (to-one),Yes,Deletion Nullify; inverse Ride.summary
+Track,createdAt,Attribute,Date,No,
+Track,id,Attribute,UUID,No,Primary identifier
+Track,name,Attribute,String,Yes,
+Track,updatedAt,Attribute,Date,No,
+Track,points,Relationship,TrackPoint (to-many),Yes,Deletion Cascade; inverse TrackPoint.track
+Track,region,Relationship,TrackRegion (to-one),Yes,Deletion Cascade; inverse TrackRegion.track
+Track,ride,Relationship,Ride (to-one),Yes,Deletion Nullify; inverse Ride.track
+TrackPoint,elevation,Attribute,Double,Yes,Default 0
+TrackPoint,id,Attribute,UUID,No,Primary identifier
+TrackPoint,latitude,Attribute,Double,No,Default 0
+TrackPoint,longitude,Attribute,Double,No,Default 0
+TrackPoint,name,Attribute,String,Yes,
+TrackPoint,speed,Attribute,Double,Yes,Default 0
+TrackPoint,timestamp,Attribute,Date,Yes,
+TrackPoint,track,Relationship,Track (to-one),Yes,Deletion Nullify; inverse Track.points
+TrackRegion,latitudeCenter,Attribute,Double,Yes,Default 0
+TrackRegion,latitudeDelta,Attribute,Double,Yes,Default 0
+TrackRegion,longitudeCenter,Attribute,Double,Yes,Default 0
+TrackRegion,longitudeDelta,Attribute,Double,Yes,Default 0
+TrackRegion,track,Relationship,Track (to-one),Yes,Deletion Nullify; inverse Track.region
+User,id,Attribute,UUID,Yes,
+User,name,Attribute,String,Yes,
+User,usesMetricSystem,Attribute,Boolean,Yes,
+User,weight,Attribute,Double,Yes,Default 0
+User,rides,Relationship,Ride (to-many),Yes,Deletion Nullify; inverse Ride.user
+

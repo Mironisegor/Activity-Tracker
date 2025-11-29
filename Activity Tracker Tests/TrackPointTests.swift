@@ -19,7 +19,7 @@ class TrackPointTests: XCTestCase {
 
     override func setUpWithError() throws {
         try super.setUpWithError()
-        let container = try! NSPersistentContainer("Velik")
+        let container = try! NSPersistentContainer("DB")
         let description = NSPersistentStoreDescription()
         description.type = NSInMemoryStoreType
         description.shouldAddStoreAsynchronously = false

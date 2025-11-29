@@ -126,7 +126,7 @@
 		4BA41B4D2481A32C0002D88A /* GoButtonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA41B4C2481A32C0002D88A /* GoButtonViewModel.swift */; };
 		4BAB77BF245B2FE000F011A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BAB77BE245B2FE000F011A0 /* AppDelegate.swift */; };
 		4BAB77C1245B2FE000F011A0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BAB77C0245B2FE000F011A0 /* SceneDelegate.swift */; };
-		4BAB77C4245B2FE000F011A0 /* Velik.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4BAB77C2245B2FE000F011A0 /* Velik.xcdatamodeld */; };
+		4BAB77C4245B2FE000F011A0 /* DB.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4BAB77C2245B2FE000F011A0 /* DB.xcdatamodeld */; };
 		4BAB77C6245B2FE000F011A0 /* SpeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BAB77C5245B2FE000F011A0 /* SpeedView.swift */; };
 		4BAB77C8245B2FE200F011A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BAB77C7245B2FE200F011A0 /* Assets.xcassets */; };
 		4BAB77CB245B2FE200F011A0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BAB77CA245B2FE200F011A0 /* Preview Assets.xcassets */; };
@@ -651,7 +651,7 @@
 				4B10F1A5249A8CB70050EEF4 /* Strings.xml */,
 				4BAB77C7245B2FE200F011A0 /* Assets.xcassets */,
 				4BAB77CC245B2FE200F011A0 /* LaunchScreen.storyboard */,
-				4BAB77C2245B2FE000F011A0 /* Velik.xcdatamodeld */,
+				4BAB77C2245B2FE000F011A0 /* DB.xcdatamodeld */,
 				4B10F1A0249A85870050EEF4 /* Localizable.strings */,
 			);
 			path = Resources;
@@ -1044,7 +1044,7 @@
 				4BA41B152472F6ED0002D88A /* MapViewModel.swift in Sources */,
 				4B5C0D7924A7AABF00DBCB90 /* LineChartView.swift in Sources */,
 				4BF6F6B424AE53330004219B /* XMLNode.swift in Sources */,
-				4BAB77C4245B2FE000F011A0 /* Velik.xcdatamodeld in Sources */,
+				4BAB77C4245B2FE000F011A0 /* DB.xcdatamodeld in Sources */,
 				4B8C0E0C24C0CD5800257071 /* InputProcessor.swift in Sources */,
 				4B8C93FC24B84C3F00785B9D /* GradientPolylineRenderer.swift in Sources */,
 				4B58B61C245C9FBA00B62914 /* LocationPermissions.swift in Sources */,
@@ -1530,13 +1530,13 @@
 /* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
-		4BAB77C2245B2FE000F011A0 /* Velik.xcdatamodeld */ = {
+		4BAB77C2245B2FE000F011A0 /* DB.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
 				4BAB77C3245B2FE000F011A0 /* Fietscomputer.xcdatamodel */,
 			);
 			currentVersion = 4BAB77C3245B2FE000F011A0 /* Fietscomputer.xcdatamodel */;
-			path = Velik.xcdatamodeld;
+			path = DB.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
